@@ -12,7 +12,7 @@ struct ContentView: View {
         NavigationView {
             List {
                 NavigationLink {
-                    
+                    MapSearchMainView()
                 } label: {
                     Text("Map Search")
                 }
