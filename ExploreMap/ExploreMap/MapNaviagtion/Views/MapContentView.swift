@@ -35,6 +35,10 @@ struct MapContentView: View {
                 MapMarker(coordinate: item.coordinate, tint: .red)
             }
             .frame(width: 400, height: 300)
+            
+            List(routeSteps) { r in
+                Text(r.step)
+            }
         }
     }
 }
