@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		025A1F282A1225780041A916 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A1F272A1225780041A916 /* Business.swift */; };
+		025A1F2A2A122A7D0041A916 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A1F292A122A7D0041A916 /* Action.swift */; };
 		02B62F082A122023002AF279 /* ExploreMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B62F072A122023002AF279 /* ExploreMapApp.swift */; };
 		02B62F0A2A122023002AF279 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B62F092A122023002AF279 /* ContentView.swift */; };
 		02B62F0C2A122025002AF279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02B62F0B2A122025002AF279 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		025A1F272A1225780041A916 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		025A1F292A122A7D0041A916 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		02B62F042A122023002AF279 /* ExploreMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExploreMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02B62F072A122023002AF279 /* ExploreMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreMapApp.swift; sourceTree = "<group>"; };
 		02B62F092A122023002AF279 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				025A1F272A1225780041A916 /* Business.swift */,
+				025A1F292A122A7D0041A916 /* Action.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				025A1F282A1225780041A916 /* Business.swift in Sources */,
+				025A1F2A2A122A7D0041A916 /* Action.swift in Sources */,
 				02B62F0A2A122023002AF279 /* ContentView.swift in Sources */,
 				02B62F082A122023002AF279 /* ExploreMapApp.swift in Sources */,
 			);
