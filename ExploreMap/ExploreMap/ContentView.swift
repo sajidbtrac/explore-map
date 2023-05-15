@@ -18,21 +18,9 @@ struct ContentView: View {
                 }
 
                 NavigationLink {
-                    
+                    MapNaviagtionMainView()
                 } label: {
-                    Text("Draw Plygon")
-                }
-                
-                NavigationLink {
-                    
-                } label: {
-                    Text("")
-                }
-                
-                NavigationLink {
-                    
-                } label: {
-                    Text("")
+                    Text("Map Naviagtion")
                 }
             }
             .listStyle(.inset)
