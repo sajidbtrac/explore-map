@@ -12,7 +12,7 @@ struct MapSearchMainView: View {
 
     var body: some View {
         NavigationView {
-            MapView(mapController: mapController)
+            MapViewTest(mapController: mapController)
         }
         .searchable(text: $mapController.searchTerm)
         .onSubmit(of: .search) {

@@ -8,7 +8,7 @@
 import SwiftUI
 import MapKit
 
-struct MapView: View {
+struct MapViewTest: View {
     @ObservedObject var mapController: MapViewModel
     
     var body: some View {
@@ -32,6 +32,6 @@ struct MapView: View {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView(mapController: MapViewModel())
+        MapViewTest(mapController: MapViewModel())
     }
 }
