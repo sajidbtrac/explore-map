@@ -12,6 +12,12 @@ struct ContentViewTest: View {
         NavigationView {
             List {
                 NavigationLink {
+                    InteractionModesView()
+                } label: {
+                    Text("Map Interaction Modes")
+                }
+
+                NavigationLink {
                     CurrentLocationView()
                 } label: {
                     Text("User Current Location")
