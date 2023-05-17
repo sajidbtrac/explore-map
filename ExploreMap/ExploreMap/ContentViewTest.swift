@@ -12,7 +12,7 @@ struct ContentViewTest: View {
         NavigationView {
             List {
                 NavigationLink {
-                    MapSearchMainView()
+                    CurrentLocationView()
                 } label: {
                     Text("User Current Location")
                 }
@@ -39,7 +39,14 @@ struct ContentViewTest: View {
                 NavigationLink {
                     GeofenceView()
                 } label: {
-                    Text("Geofence")
+                    Text("Geofence (error)")
+                        .foregroundColor(.secondary)
+                }
+                
+                NavigationLink {
+                    JSONtoMapView()
+                } label: {
+                    Text("JSON to Map")
                 }
             }
             .listStyle(.inset)
