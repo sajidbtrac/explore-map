@@ -11,13 +11,13 @@ struct MapSearchMainView: View {
     @StateObject var mapController = MapViewModel()
 
     var body: some View {
-        NavigationView {
-            MapViewTest(mapController: mapController)
-        }
+        MapViewTest(mapController: mapController)
         .searchable(text: $mapController.searchTerm)
         .onSubmit(of: .search) {
             mapController.search()
         }
+        .navigationTitle("Map Search by Keyword")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

@@ -27,6 +27,8 @@ struct JSONtoMapView: View {
             }
         })
         .onAppear(perform: readFile)
+        .navigationTitle("Show Locations from JSON")
+        .navigationBarTitleDisplayMode(.inline)
     }
     
     private func readFile() {
