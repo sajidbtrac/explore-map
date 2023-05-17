@@ -16,6 +16,17 @@ struct ContentViewTest: View {
                 } label: {
                     Text("Map Interaction Modes")
                 }
+                
+                NavigationLink {
+                    MapTypesView()
+                } label: {
+                    VStack(alignment: .leading) {
+                        Text("Map Types")
+                        Text("Standerd | Hybrid | Satellite")
+                            .font(.caption)
+                            .foregroundColor(.secondary)
+                    }
+                }
 
                 NavigationLink {
                     CurrentLocationView()
@@ -57,6 +68,7 @@ struct ContentViewTest: View {
             }
             .listStyle(.inset)
             .navigationTitle("Explore Map")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
