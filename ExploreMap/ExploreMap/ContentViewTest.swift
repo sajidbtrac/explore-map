@@ -65,6 +65,12 @@ struct ContentViewTest: View {
                 } label: {
                     Text("JSON to Map")
                 }
+                
+                NavigationLink {
+                    MapWithUserLocationView()
+                } label: {
+                    Text("User's Location Tracking")
+                }
             }
             .listStyle(.inset)
             .navigationTitle("Explore Map")

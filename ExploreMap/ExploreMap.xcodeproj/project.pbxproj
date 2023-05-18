@@ -17,6 +17,8 @@
 		024389402A14D6D4009167DE /* MapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0243893F2A14D6D4009167DE /* MapViewRepresentable.swift */; };
 		025A1F282A1225780041A916 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A1F272A1225780041A916 /* Business.swift */; };
 		025A1F2A2A122A7D0041A916 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A1F292A122A7D0041A916 /* Action.swift */; };
+		02969E3D2A15E4B0001BA992 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02969E3C2A15E4B0001BA992 /* LocationManager.swift */; };
+		02969E3F2A15EF48001BA992 /* MapWithUserLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02969E3E2A15EF48001BA992 /* MapWithUserLocationView.swift */; };
 		029815452A135740005D4FF1 /* MapDirectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029815442A135740005D4FF1 /* MapDirectionsView.swift */; };
 		02A0DB3D2A1345D100505EB7 /* GeofenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A0DB3C2A1345D100505EB7 /* GeofenceView.swift */; };
 		02A0DB422A134B1C00505EB7 /* SwiftUIPolygonGeofence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A0DB412A134B1C00505EB7 /* SwiftUIPolygonGeofence.swift */; };
@@ -50,6 +52,8 @@
 		0243893F2A14D6D4009167DE /* MapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewRepresentable.swift; sourceTree = "<group>"; };
 		025A1F272A1225780041A916 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 		025A1F292A122A7D0041A916 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		02969E3C2A15E4B0001BA992 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		02969E3E2A15EF48001BA992 /* MapWithUserLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapWithUserLocationView.swift; sourceTree = "<group>"; };
 		029815402A135330005D4FF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		029815442A135740005D4FF1 /* MapDirectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDirectionsView.swift; sourceTree = "<group>"; };
 		02A0DB3C2A1345D100505EB7 /* GeofenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofenceView.swift; sourceTree = "<group>"; };
@@ -180,6 +184,23 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		02969E382A15E1AA001BA992 /* UserLocationTracking */ = {
+			isa = PBXGroup;
+			children = (
+				02969E392A15E1C5001BA992 /* Views */,
+				02969E3C2A15E4B0001BA992 /* LocationManager.swift */,
+			);
+			path = UserLocationTracking;
+			sourceTree = "<group>";
+		};
+		02969E392A15E1C5001BA992 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				02969E3E2A15EF48001BA992 /* MapWithUserLocationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		029815422A13571F005D4FF1 /* MapDirections */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +310,7 @@
 		02B62F062A122023002AF279 /* ExploreMap */ = {
 			isa = PBXGroup;
 			children = (
+				02969E382A15E1AA001BA992 /* UserLocationTracking */,
 				0243893B2A14D64A009167DE /* MapTypes */,
 				024389352A14B95C009167DE /* InteractionModes */,
 				024389302A14B420009167DE /* CurrentLocation */,
@@ -401,6 +423,7 @@
 				0243893A2A14BAE3009167DE /* MapInteractionExampleView.swift in Sources */,
 				02B5D7A22A122F3E00FB50E6 /* MapViewModel.swift in Sources */,
 				02B5D7AD2A1237CB00FB50E6 /* MapNaviagtionMainView.swift in Sources */,
+				02969E3F2A15EF48001BA992 /* MapWithUserLocationView.swift in Sources */,
 				02B5D7A42A122F9800FB50E6 /* MapSearchMainView.swift in Sources */,
 				02B5D7AF2A1238BB00FB50E6 /* MapContentView.swift in Sources */,
 				02B5D7A92A12313F00FB50E6 /* BusinessView.swift in Sources */,
@@ -415,6 +438,7 @@
 				02B5D7B42A1239DD00FB50E6 /* RouteSteps.swift in Sources */,
 				02B62F0A2A122023002AF279 /* ContentViewTest.swift in Sources */,
 				0243892D2A149082009167DE /* LocationFromJSON.swift in Sources */,
+				02969E3D2A15E4B0001BA992 /* LocationManager.swift in Sources */,
 				02B62F082A122023002AF279 /* ExploreMapApp.swift in Sources */,
 				0243893E2A14D69B009167DE /* MapTypesView.swift in Sources */,
 			);
@@ -552,6 +576,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ExploreMap/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = 1.0;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need permission to trac user's location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
@@ -583,6 +608,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ExploreMap/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = 1.0;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need permission to trac user's location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";

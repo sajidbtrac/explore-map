@@ -14,7 +14,7 @@ struct MapInteractionExampleView: View {
     }
     let interaction: interactionMode
     
-    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 23.791113400762203, longitude: 90.40353778273963), span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.5))
+    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 23.791113400762203, longitude: 90.40353778273963), span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
     
     var body: some View {
         switch interaction {
