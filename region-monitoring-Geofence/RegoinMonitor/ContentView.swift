@@ -29,7 +29,7 @@ struct ContentView: View {
                 Map(coordinateRegion: region, interactionModes: .all, showsUserLocation: true, userTrackingMode: .constant(.follow)) // map updates by following the user's location
             }
             
-            Text("User at destination: \(settings.showAlert ? "Yes" : "No")")
+            Text("User at destination: \(settings.showAlert ? "Yes ✅" : "No ❌")")
                 .padding()
                 .background(settings.showAlert ? Color.green : Color.red)
                 .cornerRadius(10)

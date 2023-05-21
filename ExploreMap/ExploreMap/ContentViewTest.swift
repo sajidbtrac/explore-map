@@ -51,6 +51,12 @@ struct ContentViewTest: View {
                 } label: {
                     Text("User's Location Tracking")
                 }
+                
+                NavigationLink {
+                    MapWithPolylineView()
+                } label: {
+                    Text("Map With Polyline")
+                }
             }
             .listStyle(.inset)
             .navigationTitle("Explore Map")
