@@ -27,37 +27,17 @@ struct ContentViewTest: View {
                             .foregroundColor(.secondary)
                     }
                 }
-
-                NavigationLink {
-                    CurrentLocationView()
-                } label: {
-                    Text("User Current Location")
-                }
                 
                 NavigationLink {
                     MapSearchMainView()
                 } label: {
                     Text("Map Search by keyword")
                 }
-                
-                NavigationLink {
-                    MapNaviagtionMainView()
-                } label: {
-                    Text("Map Naviagtion(try)")
-                        .foregroundColor(.secondary)
-                }
 
                 NavigationLink {
                     MapDirectionsView()
                 } label: {
                     Text("Map Route & Directions")
-                }
-
-                NavigationLink {
-                    GeofenceView()
-                } label: {
-                    Text("Geofence (error)")
-                        .foregroundColor(.secondary)
                 }
                 
                 NavigationLink {
